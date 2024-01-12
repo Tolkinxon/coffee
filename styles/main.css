@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/barlow-v12-latin-700.woff2') format('woff2'); 
+  }
+
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fraunces-v31-latin-900.woff2') format('woff2');
+  }
+
+  .container {
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+    margin-bottom: 44px;
+
+  }
+
+  .header-container img {
+    width: 236px;
+    height: 26px;
+  }
+
+  .header-page-list {
+    width: 283px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-item {
+    color: #83888F;
+    font-family: 'Barlow', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; /* 125% */
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+  }
+
+  /* hero */
+  .hero-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .hero-heading {
+    color: #FEFCF7;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px; /* 100% */
+  }
