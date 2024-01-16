@@ -328,8 +328,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .how-it-works-item {
+  width: 285px;
   border-top: 1px solid #FDD6BA;
   position: relative;
+}
+
+.how-it-works-item:nth-child(3) {
+  border-top: none;
+
 }
 
 .item-round {
@@ -338,7 +344,9 @@ h1, h2, h3, h4, h5, h6, p {
   border: 1px solid #0E8784;
   border-radius: 50%;
   position: absolute;
+  top: -18px;
   margin-bottom: 37px;
+  background-color: white;
 }
 
 .item-number {
@@ -349,6 +357,8 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 900;
   line-height: 72px; /* 100% */
   margin-bottom: 38px;
+  margin-top: 82px;
+
 }
 
 .item-heading {
@@ -363,7 +373,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .item-paragraph {
+  color: #333D4B;
 
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
 }
 
 
