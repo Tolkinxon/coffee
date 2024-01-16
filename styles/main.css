@@ -309,5 +309,64 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 26px; /* 162.5% */
 }
 
+/* how it works */
+.how-it-works-container {
+  width: 1085px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.how-it-works {
+  color: #83888F;
+  font-family: 'Fraunces', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px; /* 133.333% */
+  margin-bottom: 80px;
+}
+
+.how-it-works-item {
+  border-top: 1px solid #FDD6BA;
+  position: relative;
+}
+
+.item-round {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0E8784;
+  border-radius: 50%;
+  position: absolute;
+  margin-bottom: 37px;
+}
+
+.item-number {
+  color: #FDD6BA;
+  font-family: 'Fraunces', sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px; /* 100% */
+  margin-bottom: 38px;
+}
+
+.item-heading {
+  width: 255px;
+  color: #333D4B;
+  font-family: Fraunces;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px; /* 112.5% */
+  margin-bottom: 42px;
+}
+
+.item-paragraph {
+
+}
+
+
+
 
 
