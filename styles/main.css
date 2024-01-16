@@ -315,6 +315,8 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-right: 505px;
+
 }
 
 .how-it-works {
@@ -327,8 +329,13 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 80px;
 }
 
+.how-it-works-list {
+  display: flex;
+}
+
 .how-it-works-item {
-  width: 285px;
+  width: 380px;
+  padding-right: 95px;
   border-top: 1px solid #FDD6BA;
   position: relative;
 }
