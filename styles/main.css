@@ -81,6 +81,12 @@ h1, h2, h3, h4, h5, h6, p {
   text-transform: uppercase;
 }
 
+.header-item:hover {
+  color: #333D4B;
+  letter-spacing: 0.923px;
+  cursor: pointer;
+}
+
 /* hero */
 .hero {
   margin-bottom: 100px;
@@ -403,7 +409,7 @@ h1, h2, h3, h4, h5, h6, p {
   height: 56px;
   flex-shrink: 0;
   border-radius: 6px;
-  background: #66D2CF;
+  background: #0E8784;
   
   color: #FEFCF7;
   
@@ -414,6 +420,12 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 900;
   line-height: 25px; /* 138.889% */
   border: none;
+}
+
+.how-it-works-button:hover {
+  background: #66D2CF;
+  cursor: pointer;
+
 }
 
 /* footer */
@@ -461,16 +473,54 @@ h1, h2, h3, h4, h5, h6, p {
   text-transform: uppercase;
 }
 
+.footer-item:hover {
+  color: #FEFCF7;
+  cursor: pointer;
+}
+
 .footer-right-side {
   width: 120px;
   display: flex;
   justify-content: space-between;
 }
 
-.footer-right-side img{
+.footer-right-side .img{
+  display: inline-block;
+  width: 24px;
   height: 24px;
-  color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+.footer-right-side .img:nth-child(1) {
+  background-image: url('../images/facebook.svg');
+}
+
+.footer-right-side .img:nth-child(1):hover {
+  background-image: url('../images/facebook_copy.svg');
+  cursor: pointer;
+}
+
+.footer-right-side .img:nth-child(2) {
+  background-image: url('../images/twitter.svg');
+}
+
+.footer-right-side .img:nth-child(2):hover {
+  background-image: url('../images/twitter_copy.svg');
+  cursor: pointer;
+}
+
+.footer-right-side .img:nth-child(3) {
+  background-image: url('../images/instagram.svg');
+}
+
+.footer-right-side .img:nth-child(3):hover {
+  background-image: url('../images/instagram_copy.svg');
+  cursor: pointer;
+}
+
+
 
 
 
