@@ -1,0 +1,35 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+  margin-bottom: 44px;
+  
+}
+
+.header__container img {
+  width: 236px;
+  height: 26px;
+}
+
+.header-page__list {
+  width: 283px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__item {
+  color: #83888F;
+  font-family: 'Barlow', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 125% */
+  letter-spacing: 0.923px;
+  text-transform: uppercase;
+}
+
+.header__item:hover {
+  color: #333D4B;
+  letter-spacing: 0.923px;
+  cursor: pointer;
+}
