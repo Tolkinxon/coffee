@@ -18,6 +18,7 @@
 }
 
 .header__item {
+  a {
   color: #83888F;
   font-family: 'Barlow', sans-serif;
   font-size: 12px;
@@ -26,10 +27,20 @@
   line-height: 15px; /* 125% */
   letter-spacing: 0.923px;
   text-transform: uppercase;
+  }
 }
 
-.header__item:hover {
+.header__item {
+  .header--active{
   color: #333D4B;
   letter-spacing: 0.923px;
-  cursor: pointer;
+}
+}
+
+.header__item {
+    a:hover {
+    color: #333D4B;
+    letter-spacing: 0.923px;
+    cursor: pointer;
+    }
 }

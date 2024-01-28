@@ -1,0 +1,33 @@
+.about-us__container {
+    height: 450px;
+    background-image: url('./../images/about-us-mg.png');
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;  
+    padding-left: 85px;
+}
+
+.about-us__heading {
+    width: 445px;
+    color: #FEFCF7;
+    font-family: "Fraunces", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 120% */
+    margin-bottom: 24px;
+}
+
+.about-us__text {
+    width: 445px;
+    color: #FEFCF7;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}

@@ -1,0 +1,35 @@
+.commitment__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 270px;
+}
+
+.commitment__img {
+    width: 485px;
+    height: 606px;
+    margin-right: 125px;
+    border-radius: 10px;
+}
+
+.commitment__heading {
+    color: #333D4B;
+    font-family: "Fraunces", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 120% */
+    margin-bottom: 32px;
+}
+
+.commitment__text {
+    width: 540px;
+    color: #333D4B;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    opacity: 0.8;
+}
+

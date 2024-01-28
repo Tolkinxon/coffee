@@ -349,12 +349,31 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header__container {
@@ -375,7 +394,7 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: space-between;
 }
 
-.header__item {
+.header__item a {
   color: #83888F;
   font-family: "Barlow", sans-serif;
   font-size: 12px;
@@ -386,7 +405,12 @@ h1, h2, h3, h4, h5, h6, p {
   text-transform: uppercase;
 }
 
-.header__item:hover {
+.header__item .header--active {
+  color: #333D4B;
+  letter-spacing: 0.923px;
+}
+
+.header__item a:hover {
   color: #333D4B;
   letter-spacing: 0.923px;
   cursor: pointer;
@@ -684,6 +708,187 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .item__paragraph {
+  color: #333D4B;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.about-us__container {
+  height: 450px;
+  background-image: url("./../images/about-us-mg.png");
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 85px;
+}
+
+.about-us__heading {
+  width: 445px;
+  color: #FEFCF7;
+  font-family: "Fraunces", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px; /* 120% */
+  margin-bottom: 24px;
+}
+
+.about-us__text {
+  width: 445px;
+  color: #FEFCF7;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.commitment__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 270px;
+}
+
+.commitment__img {
+  width: 485px;
+  height: 606px;
+  margin-right: 125px;
+  border-radius: 10px;
+}
+
+.commitment__heading {
+  color: #333D4B;
+  font-family: "Fraunces", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px; /* 120% */
+  margin-bottom: 32px;
+}
+
+.commitment__text {
+  width: 540px;
+  color: #333D4B;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  opacity: 0.8;
+}
+
+.quality__container {
+  position: relative;
+  padding-top: 80px;
+  padding-left: 85px;
+  padding-bottom: 160px;
+  border-radius: 10px;
+  background: #2C343E;
+  margin-bottom: 180px;
+  display: flex;
+}
+
+.quality__wrapper {
+  width: 540px;
+  margin-right: 90px;
+}
+
+.quality__heading {
+  color: #FEFCF7;
+  font-family: "Fraunces", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px; /* 120% */
+  margin-bottom: 32px;
+}
+
+.quality__text {
+  color: #FEFCF7;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  opacity: 0.8;
+}
+
+.quality__img {
+  width: 445px;
+  height: 474px;
+  border-radius: 8px;
+  position: absolute;
+  right: 85px;
+  bottom: 60px;
+}
+
+.headquarters__container {
+  width: 1065px;
+  margin-bottom: 170px;
+}
+
+.headquarters__heading {
+  color: #83888F;
+  font-family: "Fraunces 9pt";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px; /* 133.333% */
+  margin-bottom: 72px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headquarters__item {
+  min-width: 255px;
+}
+
+.headquarters__item::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 45px;
+}
+
+.headquarters__item:nth-child(1)::before {
+  background-image: url("./../images/united-kingdom.svg");
+  background-size: 41px 50px;
+}
+
+.headquarters__item:nth-child(2)::before {
+  background-image: url("./../images/canada.svg");
+  background-size: 51px 50px;
+}
+
+.headquarters__item:nth-child(3)::before {
+  background-image: url("./../images/australia.svg");
+  background-size: 50px 44px;
+}
+
+.headquarters_heading {
+  color: #333D4B;
+  font-family: "Fraunces", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px; /* 112.5% */
+  margin-bottom: 25px;
+}
+
+.headquarters__text {
   color: #333D4B;
   font-family: "Barlow", sans-serif;
   font-size: 16px;
