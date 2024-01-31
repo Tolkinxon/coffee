@@ -376,6 +376,11 @@ a {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 688px;
+  }
+}
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -430,7 +435,7 @@ a {
   background-image: url("./../images/hero-background.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1280 auto;
   border-radius: 10px;
 }
 
@@ -479,6 +484,19 @@ a {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero__container {
+    padding-left: 58px;
+    height: 500px;
+    background-image: url("./../images/hero-background768.png");
+  }
+  .hero__heading {
+    width: 329px;
+    margin-bottom: 24px;
+    line-height: 48px; /* 100% */
+    font-size: 48px;
+  }
+}
 .collection {
   margin-bottom: 180px;
 }
