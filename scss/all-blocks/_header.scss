@@ -1,8 +1,10 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 44px;
   margin-bottom: 44px;
+  position: relative;
   
 }
 
@@ -11,39 +13,93 @@
   height: 26px;
 }
 
-.header-page__list {
+.header__list {
   width: 283px;
   display: flex;
   justify-content: space-between;
 }
 
+.header__list--click-burger {
+  width: 327px;
+  height: 240px;
+  position: absolute;
+  box-shadow: 0px 6px 10px white;
+  text-align: center;
+  background-color: white;
+  padding-top: 24px;
+  .header__item {
+    a {
+      font-family: "Fraunces";
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px; /* 125% */
+      color: #333D4B;
+      text-transform: capitalize;
+    }
+    margin-bottom: 32px;
+  }
+
+}
+
 .header__item {
   a {
-  color: #83888F;
-  font-family: 'Barlow', sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 15px; /* 125% */
-  letter-spacing: 0.923px;
-  text-transform: uppercase;
+    color: #83888F;
+    font-family: 'Barlow', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; /* 125% */
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
   }
 }
 
 .header__item {
   .header--active{
-  color: #333D4B;
-  letter-spacing: 0.923px;
-}
+    color: #333D4B;
+    letter-spacing: 0.923px;
+  }
 }
 
 .header__item {
-    a:hover {
+  a:hover {
     color: #333D4B;
     letter-spacing: 0.923px;
     cursor: pointer;
-    }
+  }
 }
+
+.header__burger, .header__close {
+  display: none;
+}
+
+
+@media only screen and (max-width: 570px) {
+  .header__container {
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .header__container img {
+    width: 163px;
+    height: 18px;
+  }
+  
+  .header__list {
+    display: none;
+  }
+  
+  
+  .header__burger {
+    display: block;
+    width: 16px !important;
+  }
+  
+  .header__close {
+    width: 14px !important;
+  }
+}
+
 
 
 
