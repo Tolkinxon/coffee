@@ -67,7 +67,27 @@
 
 
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 600px) {
+
+  .header__container img {
+    width: 180px;
+    height: 16px;
+  }
+
+  .header__list {
+    width: 180px;
+  }
+
+  .header__item {
+  a {
+
+    font-size: 8px;
+  }}
+  
+ 
+}
+
+@media only screen and (max-width: 375px) {
   .header__container {
     margin-top: 32px;
     margin-bottom: 80px;
@@ -77,12 +97,11 @@
       height: 18px;
     }
   }
-  
+
   .header__list {
     display: none;
 
     width: 100%;
-    border: 2px solid red;
     height: calc(100vh - 70px);
     position: absolute;
     text-align: center;
@@ -106,8 +125,7 @@
     }
   
   }
-  
-  
+
   .header__burger {
     display: block;
   } 
@@ -130,6 +148,7 @@
       display: block;
     }
   }
+  
   
 
 }
