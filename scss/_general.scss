@@ -1,10 +1,21 @@
 *{
     box-sizing: border-box;
   }
+
+  html {
+    height: 100%;
+  }
   
   body {
+    height: 100%;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    flex-grow: 1;
   }
   
   ul, ol {
@@ -47,11 +58,11 @@
 
   @media only screen and (max-width: 768px) {
     .container {
-      max-width: 709px;
+      max-width: 708px;
     }
   }
 
-  @media only screen and (max-width: 570px) {
+  @media only screen and (max-width: 375px) {
     .container {
       max-width: 337px;
       padding-left: 5px;
