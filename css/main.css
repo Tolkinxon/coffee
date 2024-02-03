@@ -560,7 +560,8 @@ a {
 }
 
 .link {
-  width: 217px;
+  max-width: 217px;
+  width: 100%;
   height: 56px;
   flex-shrink: 0;
   border-radius: 6px;
@@ -585,13 +586,17 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .hero {
+    margin-bottom: 144px;
+  }
   .hero__container {
     padding-left: 58px;
     height: 500px;
     background-image: url("./../images/hero-background768.png");
   }
   .hero__heading {
-    width: 329px;
+    max-width: 329px;
+    width: 100%;
     margin-bottom: 24px;
     line-height: 48px; /* 100% */
     font-size: 48px;
@@ -604,15 +609,20 @@ a {
 }
 @media only screen and (max-width: 540px) {
   .hero__heading {
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
     font-size: 40px;
   }
   .hero__paragraph {
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
     font-size: 15px;
   }
 }
 @media only screen and (max-width: 375px) {
+  .hero {
+    margin-bottom: 120px;
+  }
   .hero__container {
     height: 500px;
     padding: 0;
@@ -621,7 +631,8 @@ a {
     text-align: center;
   }
   .hero__heading {
-    width: 279px;
+    max-width: 279px;
+    width: 100%;
     font-size: 40px;
     line-height: 40px; /* 100% */
     margin-bottom: 24px;
@@ -641,15 +652,15 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("");
 }
 
 .collection__list {
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 126px;
-  padding-left: 30px;
   background-image: url("./../images/collection-back.png");
   background-position: center top;
   background-repeat: no-repeat;
@@ -660,16 +671,22 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 30px;
+}
+
+.collection__item + .collection__item {
+  margin-left: 30px;
 }
 
 .collection__item-img {
-  height: 193px;
+  max-height: 193px;
+  height: 100%;
   padding-bottom: 72px;
 }
 
 .collection__item-heading {
   color: #333D4B;
+  width: 100%;
+  word-wrap: break-word;
   text-align: center;
   font-family: "Fraunces", sans-serif;
   font-size: 24px;
@@ -680,7 +697,8 @@ a {
 }
 
 .collection__item-paragraph {
-  width: 255px;
+  max-width: 255px;
+  width: 100%;
   color: #333D4B;
   text-align: center;
   font-family: "Barlow", sans-serif;
@@ -690,6 +708,11 @@ a {
   line-height: 26px; /* 162.5% */
 }
 
+@media only screen and (max-width: 768px) {
+  .collection__list {
+    flex-direction: column;
+  }
+}
 .choose-us {
   margin-bottom: 200px;
 }
