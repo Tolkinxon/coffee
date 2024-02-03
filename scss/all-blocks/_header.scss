@@ -70,8 +70,8 @@
 @media only screen and (max-width: 600px) {
 
   .header__container img {
-    width: 180px;
-    height: 16px;
+    width: 163px;
+    height: 18px;
   }
 
   .header__list {
@@ -90,7 +90,7 @@
 @media only screen and (max-width: 375px) {
   .header__container {
     margin-top: 32px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
     & img{
       width: 163px;
@@ -110,6 +110,7 @@
     flex-direction: column;
     justify-content: start;
     left: 0;
+    padding-top: 40px;
     
 
     .header__item {
