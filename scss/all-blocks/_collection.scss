@@ -69,7 +69,12 @@
     line-height: 26px; /* 162.5% */
   }
 
-  
+  @media only screen and (max-width: 1040px) {
+    .collection__list {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
 
   @media only screen and (max-width: 768px) {
     .collection {
@@ -78,6 +83,9 @@
 
  
     .collection__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       padding-top: 70px;
       flex-direction: column;
@@ -118,6 +126,16 @@
       line-height: 25px; /* 162.5% */
     }   
   
+  }
+
+  @media only screen and (max-width: 580px) {
+    .collection__item {
+      padding-right: 10px;
+    }
+    
+    .collection__item img {
+      margin-right: 0px;
+    }
   }
 
 
