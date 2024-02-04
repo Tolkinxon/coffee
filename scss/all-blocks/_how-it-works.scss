@@ -67,7 +67,7 @@
     max-width: 255px;
     width: 100%;
     color: #333D4B;
-    font-family: Fraunces;
+    font-family: 'Fraunces', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 900;
@@ -86,7 +86,44 @@
 
 
   @media only screen and (max-width: 768px) {
+    .how-it-works {
+      margin-bottom: 144px;
+      display: flex;
+    }
     
+    .how-it-works__heading {
+      margin-bottom: 55px;
+    }
+    
+    .how-it-works__list {
+      display: flex;
+      margin-bottom: 44px;
+    }
+    
+    .how-it-works__item {
+      max-width: 223px;
+      width: 100%;
+      padding-right: 20px;
+    }
+    
+    .item__number {
+      margin-bottom: 42px;
+      margin-top: 48px;
+    }
+    
+    .item__heading {
+      max-width: 223px;
+      width: 100%;
+      font-size: 28px;
+      line-height: 32px; /* 112.5% */
+      margin-bottom: 38px;
+    }
+    
+    .item__paragraph {
+      font-size: 15px;
+      line-height: 25px; /* 162.5% */
+    }
+      
   }
   
   
