@@ -1,7 +1,6 @@
-.choose-us {
-    padding-bottom: 400px;
-    border: 2px solid red;
-  }
+// .choose-us {
+//     padding-bottom: 400px;
+//   }
   
   .choose-us__container {
     height: 577px;
@@ -122,7 +121,7 @@
     .choose-us__bottom-list {
       width: 573px;
       flex-direction: column;
-      border: 2px solid red;
+      top: 50%;
     }
 
     .choose-us__bottom-item {
@@ -140,13 +139,25 @@
     .choose-us__bottom-item div {
       max-width: 344px;
       width: 100%;
-      border: 2px solid red;
     }
 
     .bottom-item__img {
       width: 56px;
-      height: 56px !important;
-      border: 2px solid red;
+      min-height: 56px;
+      height: 100%;
+      margin-bottom: 0px;
+    }
+
+    .bottom-item__heading {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+
+    .bottom-item__paragraph {
+      width: 100%;
+      text-align: left;
+      font-size: 15px;
+      line-height: 25px; /* 162.5% */
     }
 
   }
