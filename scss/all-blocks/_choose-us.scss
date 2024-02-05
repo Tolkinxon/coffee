@@ -1,6 +1,6 @@
-// .choose-us {
-//     padding-bottom: 400px;
-//   }
+.choose-us {
+    padding-bottom: 400px;
+  }
   
   .choose-us__container {
     height: 577px;
@@ -163,6 +163,10 @@
   }
 
   @media only screen and (max-width: 375px){
+    .choose-us {
+      padding-bottom: 800px;
+    }
+
     .choose-us__container {
       height: 902px;
     } 
