@@ -49,11 +49,14 @@
   }
   
   .choose-us__bottom-list {
-    width: 1150px;
+    max-width: 1150px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: absolute;
     top: 65%;
+    border: 2px solid red; 
+
   }
   
   .choose-us__bottom-item {
