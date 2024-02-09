@@ -1097,12 +1097,11 @@ a {
 }
 
 .how-it-works__container {
-  max-width: 1150px;
+  max-width: 1055px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding-left: 30px;
 }
 
 .how-it-works__heading {
@@ -1182,7 +1181,6 @@ a {
   .how-it-works__container {
     max-width: 708px;
     width: 100%;
-    padding-left: 30px;
   }
   .how-it-works__heading {
     margin-bottom: 55px;
