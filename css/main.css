@@ -1396,6 +1396,7 @@ a {
     background-position: 0px;
     padding-left: 58px;
     background-size: cover;
+    margin-bottom: 144px;
   }
 }
 @media only screen and (max-width: 768px) and (max-width: 640px) {
@@ -1437,6 +1438,7 @@ a {
     padding-left: 5px;
     align-items: center;
     padding-top: 24px;
+    margin-bottom: 120px;
   }
   .about-us__heading {
     max-width: 280px;
@@ -1453,17 +1455,22 @@ a {
   }
 }
 .commitment__container {
+  max-width: 1110px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 270px;
 }
 
 .commitment__img {
-  width: 485px;
-  height: 606px;
-  margin-right: 125px;
+  max-width: 485px;
+  width: 100%;
+  max-height: 606px;
   border-radius: 10px;
+  margin-right: 68px;
 }
 
 .commitment__heading {
@@ -1477,7 +1484,8 @@ a {
 }
 
 .commitment__text {
-  width: 540px;
+  max-width: 540px;
+  width: 100%;
   color: #333D4B;
   font-family: "Barlow", sans-serif;
   font-size: 16px;
@@ -1487,6 +1495,11 @@ a {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 930) {
+  .commitment__img {
+    width: 400px;
+  }
+}
 .quality__container {
   position: relative;
   padding-top: 80px;
