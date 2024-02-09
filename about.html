@@ -7,36 +7,43 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container header__container">
-            <img src="./images/header-logo.svg" alt="the logo of coffee" width="236" height="26" >
+    <header class="header ">
+        <div class="container  header__container">
+                <img src="./images/header-logo.svg" alt="the logo of coffee" width="236" height="26" >
             
-            <ul class="header-page__list">
-                <li class="header__item ">
-                    <a href="./index.html">HOME</a>
-                </li>
-                
-                <li class="header__item">
-                    <a class="header--active" href="#">ABOUT US</a>
-                </li>
-                
-                <li class="header__item">
-                    <a href="#">Create your plan</a>
-                </li>
-            </ul>
+                <button class="header__burger">
+                    <img class="menu__on"  src="./images/burger-btn.svg" alt="this is burger btn" width="16" height="15">
+                    <img class="menu__off"  src="./images/close-btn.svg" alt="this is burger btn" width="16" height="15">
+                </button>
+
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header--active" href="index.html">Home</a>
+                    </li>
+                    
+                    <li class="header__item">
+                        <a href="./about.html">About Us</a>
+                    </li>
+                    
+                    <li class="header__item">
+                        <a href="#">Create your plan</a>
+                    </li>
+                </ul>
         </div>
-    </header>
+    </header>  
 
     <main>
         <section class="about-us">
             <h1 class="visually-hidden">Coffe site's about side</h1>
-            <div class="container about-us__container">
-                <h2 class="about-us__heading">About us</h2>
-                <p class="about-us__text">Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment.</p>
+            <div class="container">
+                <div class="about-us__container">
+                    <h2 class="about-us__heading">About us</h2>
+                    <p class="about-us__text">Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment.</p>
+                </div>
             </div>
         </section>
 
-        <section class="commitment">
+        <!-- <section class="commitment">
             <div class="container commitment__container">
                 <img class="commitment__img" src="./images/commitment-img.png" alt="there is a man making coffee" width="485" height="606">
 
@@ -102,11 +109,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
           <div class="footer__container">
             <div class="footer__left-side">
@@ -124,6 +131,6 @@
           </div>
            
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
