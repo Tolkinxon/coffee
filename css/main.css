@@ -1323,7 +1323,7 @@ a {
   }
 }
 .about-us__container {
-  height: 450px;
+  min-height: 450px;
   background-image: url("./../images/about-us-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1337,19 +1337,20 @@ a {
 }
 @media only screen and (max-width: 1160px) {
   .about-us__container {
-    height: 430px;
+    min-height: 430px;
     background-position: -80px;
   }
 }
 @media only screen and (max-width: 950px) {
   .about-us__container {
-    height: 415px;
+    min-height: 415px;
     background-position: -100px;
   }
 }
 
 .about-us__heading {
-  width: 445px;
+  max-width: 445px;
+  width: 100%;
   color: #FEFCF7;
   font-family: "Fraunces", sans-serif;
   font-size: 40px;
@@ -1372,7 +1373,8 @@ a {
 }
 
 .about-us__text {
-  width: 445px;
+  max-width: 445px;
+  width: 100%;
   color: #FEFCF7;
   font-family: "Barlow", sans-serif;
   font-size: 16px;
@@ -1382,28 +1384,72 @@ a {
 }
 @media only screen and (max-width: 950px) {
   .about-us__text {
-    width: 430px;
+    max-width: 430px;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .about-us__container {
-    height: 400px;
+    min-height: 400px;
     background-image: url("./../images/about-us-bg2.png");
     background-position: 0px;
     padding-left: 58px;
-    background-size: contain;
+    background-size: cover;
   }
+}
+@media only screen and (max-width: 768px) and (max-width: 640px) {
+  .about-us__container {
+    background-position: -60px;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 520px) {
+  .about-us__container {
+    background-position: -200px;
+  }
+}
+@media only screen and (max-width: 768px) {
   .about-us__heading {
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
     font-size: 32px;
     line-height: 40px; /* 120% */
     margin-bottom: 24px;
   }
   .about-us__text {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     font-size: 15px;
     line-height: 25px; /* 162.5% */
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 520px) {
+  .about-us__text {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .about-us__container {
+    min-height: 400px;
+    background-image: url("./../images/about-us-bg3.png");
+    background-size: cover;
+    background-position: 0px;
+    padding-left: 5px;
+    align-items: center;
+    padding-top: 24px;
+  }
+  .about-us__heading {
+    max-width: 280px;
+    width: 100%;
+    font-size: 28px;
+    line-height: 28px; /* 120% */
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .about-us__text {
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
   }
 }
 .commitment__container {
