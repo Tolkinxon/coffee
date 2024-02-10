@@ -1576,7 +1576,7 @@ a {
   position: relative;
   padding-top: 80px;
   padding-left: 85px;
-  padding-bottom: 160px;
+  padding-bottom: 168px;
   border-radius: 10px;
   background: #2C343E;
   margin-bottom: 180px;
@@ -1794,6 +1794,20 @@ ul {
   line-height: 26px; /* 162.5% */
 }
 
+@media only screen and (max-width: 768px) {
+  .headquarters__container {
+    width: 708px;
+    margin-bottom: 144px;
+  }
+  .headquarters__item {
+    min-width: 222px;
+  }
+  .headquarters_heading {
+    font-size: 24px;
+    line-height: 36px; /* 112.5% */
+    margin-bottom: 21px;
+  }
+}
 .footer__container {
   background-color: #2C343E;
   padding-top: 47px;
