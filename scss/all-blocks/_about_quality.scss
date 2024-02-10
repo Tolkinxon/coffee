@@ -28,13 +28,11 @@
 
     .quality__text {
         color: #FEFCF7;
-
         font-family: 'Barlow', sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 26px; /* 162.5% */
-        
         opacity: 0.8;
     }
 
@@ -45,5 +43,46 @@
         position: absolute;
         right: 85px;
         bottom: 60px;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        .quality__container {
+            position: relative;
+            padding-top: 224px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 83px;
+            margin-bottom: 128px;
+            align-items: center;
+            justify-content: center;
+        }  
+
+        .quality__wrapper {
+            width: 540px;
+            margin: 0px;
+
+        }
+
+        .quality__heading {
+            font-size: 32px;
+            line-height: 48px; /* 120% */
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        
+        .quality__text {
+            font-size: 15px;
+            line-height: 25px; /* 162.5% */
+            text-align: center;
+        }
+
+        
+        .quality__img {        
+            width: 573px;
+            height: 320px;
+            right: 68px;
+            top: -160px;
+        }
     }
 
