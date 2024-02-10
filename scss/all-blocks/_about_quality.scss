@@ -48,7 +48,6 @@
 
     @media only screen and (max-width: 768px) {
         .quality__container {
-            position: relative;
             padding-top: 224px;
             padding-left: 0px;
             padding-right: 0px;
@@ -83,6 +82,33 @@
             height: 320px;
             right: 68px;
             top: -160px;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .quality__container {
+            padding-top: 142px;
+            padding-bottom: 61px;
+            margin-bottom: 120px;
+        }  
+
+        .quality__wrapper {
+            width: 280px;
+        }
+
+        .quality__heading {
+            font-size: 28px;
+            line-height: 28px; /* 120% */
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        
+        .quality__img {        
+            width: 280px;
+            height: 156px;
+            right: 29px;
+            top: 0px;
+            transform: translateY(-50%);
         }
     }
 
