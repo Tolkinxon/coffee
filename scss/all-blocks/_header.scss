@@ -76,19 +76,18 @@
   }
 
   .header__list {
-    width: 180px;
+   width: 260px;
   }
 
   .header__item {
   a {
-
-    font-size: 8px;
+    font-size: 11px;
   }}
   
  
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 490px) {
   .header__container {
     margin-top: 32px;
     margin-bottom: 40px;
