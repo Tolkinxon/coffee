@@ -1866,6 +1866,9 @@ ul {
     text-align: center;
   }
 }
+.plan {
+  margin-bottom: 168px;
+}
 .plan__container {
   min-height: 450px;
   background-image: url("./../images/create_plan-back.png");
@@ -1898,6 +1901,52 @@ ul {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 768px) {
+  .plan {
+    margin-bottom: 144px;
+  }
+  .plan__container {
+    min-height: 400px;
+    background-image: url("./../images/create_plan-back2.png");
+    padding-left: 58px;
+    padding-right: 40px;
+  }
+  .plan__texts-wrapper {
+    max-width: 400px;
+  }
+  .plan__heading {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .plan__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .plan {
+    margin-bottom: 120px;
+  }
+  .plan__container {
+    background-image: url("./../images/create_plan-back3.png");
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+  }
+  .plan__texts-wrapper {
+    max-width: 280px;
+  }
+  .plan__heading {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  .plan__text {
+    text-align: center;
+  }
+}
 .footer__container {
   background-color: #2C343E;
   padding-top: 47px;
