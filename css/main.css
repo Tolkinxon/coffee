@@ -1951,6 +1951,27 @@ ul {
   margin-bottom: 168px;
 }
 
+.choosing__container {
+  display: flex;
+  padding-right: 85px;
+  padding-left: 85px;
+}
+.choosing__left-list {
+  max-width: 255px;
+  display: flex;
+  flex-direction: column;
+}
+.choosing__left-item, .choosing__left-item:not(:last-child) {
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  color: rgba(51, 61, 75, 0.4);
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom: 1px solid rgb(131, 136, 143);
+}
+
 .footer__container {
   background-color: #2C343E;
   padding-top: 47px;
