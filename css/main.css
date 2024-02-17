@@ -1981,7 +1981,7 @@ ul {
   cursor: pointer;
 }
 .choosing__left-item--active span {
-  color: rgba(51, 61, 75, 0.9);
+  color: rgb(51, 61, 75);
 }
 
 .footer__container {
