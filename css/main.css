@@ -344,6 +344,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #fefcf7;
+  padding-top: 300px;
 }
 
 .main {
@@ -1953,11 +1954,12 @@ ul {
 
 .choosing__container {
   display: flex;
-  padding-right: 85px;
-  padding-left: 85px;
+  padding-right: 95px;
+  padding-left: 95px;
 }
 .choosing__left-list {
   max-width: 255px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -1970,6 +1972,16 @@ ul {
   padding-bottom: 24px;
   padding-top: 24px;
   border-bottom: 1px solid rgb(131, 136, 143);
+}
+.choosing__left-item span span {
+  margin-right: 25px;
+}
+.choosing__left-item span:hover {
+  color: rgba(51, 61, 75, 0.6);
+  cursor: pointer;
+}
+.choosing__left-item--active span {
+  color: rgba(51, 61, 75, 0.9);
 }
 
 .footer__container {

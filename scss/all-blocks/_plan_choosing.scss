@@ -1,13 +1,14 @@
 .choosing {
     &__container {
         display: flex;
-        padding-right: 85px;
-        padding-left: 85px;
+        padding-right: 95px;
+        padding-left: 95px;
     }
 
 
     &__left-list {
         max-width: 255px;
+        width: 100%;
         display: flex;
         flex-direction: column;
     } 
@@ -17,16 +18,29 @@
         font-size: 24px;
         font-weight: 900;
         line-height: 32px;
-        color: rgba(51, 61, 75, 0.4);
+        color: rgba(51, 61, 75, 0.4); 
         padding-bottom: 24px;
         padding-top: 24px;
         border-bottom: 1px solid rgba(131, 136, 143, 1);
     }
+    
+    &__left-item span span {
+        margin-right: 25px;
+    }
+    
+    
+    &__left-item span:hover {
+        color: rgba(51, 61, 75, 0.6); 
+        cursor: pointer;  
+    }
+
+    &__left-item--active span{
+        color: rgba(51, 61, 75, 0.9); 
+    }
+
+
 
    
-
-
-
 
 
  
