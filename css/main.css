@@ -1980,7 +1980,7 @@ ul {
   color: rgba(51, 61, 75, 0.6);
   cursor: pointer;
 }
-.choosing__left-item--active span {
+.choosing__left-item--active span, .choosing__left-item--active span:hover {
   color: rgb(51, 61, 75);
 }
 

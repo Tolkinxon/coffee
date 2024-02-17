@@ -34,9 +34,12 @@
         cursor: pointer;  
     }
 
-    &__left-item--active span{
+    &__left-item--active span, &__left-item--active span:hover{
         color: rgba(51, 61, 75, 1); 
     }
+
+
+   
 
 
 
