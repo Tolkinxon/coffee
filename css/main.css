@@ -1954,6 +1954,8 @@ ul {
 
 .choosing__container {
   display: flex;
+  justify-content: left;
+  align-items: start;
   padding-right: 95px;
   padding-left: 95px;
 }
@@ -1962,6 +1964,7 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-right: 125px;
 }
 .choosing__left-item, .choosing__left-item:not(:last-child) {
   font-family: "Fraunces", sans-serif;
@@ -1995,6 +1998,9 @@ ul {
 }
 .choosing__right-item > div:nth-child(1) {
   margin-bottom: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .choosing__right-item > div:nth-child(1) h2 {
   font-family: "Fraunces", sans-serif;
@@ -2010,7 +2016,8 @@ ul {
 .choosing__right-item > div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  overflow: hidden;
 }
 .choosing__right-item > div input {
   display: none;
