@@ -1983,6 +1983,67 @@ ul {
 .choosing__left-item--active span, .choosing__left-item--active span:hover {
   color: rgb(51, 61, 75);
 }
+.choosing__right-list {
+  max-width: 730px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.choosing__right-item {
+  width: 100%;
+  margin-bottom: 88px;
+}
+.choosing__right-item > div:nth-child(1) {
+  margin-bottom: 56px;
+}
+.choosing__right-item > div:nth-child(1) h2 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: rgb(131, 136, 143);
+}
+.choosing__right-item > div:nth-child(1) img {
+  width: 18px;
+  height: 12px;
+}
+.choosing__right-item > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.choosing__right-item > div input {
+  display: none;
+}
+.choosing__right-item > div input:checked + label {
+  background: rgb(14, 135, 132);
+  color: white;
+}
+.choosing__right-item > div label {
+  width: 228px;
+  height: 250px;
+  padding: 32px 28px;
+  background: rgb(244, 241, 235);
+  border-radius: 10px;
+  color: rgb(51, 61, 75);
+}
+.choosing__right-item > div label h3 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.choosing__right-item > div label p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.choosing__right-item > div label:hover {
+  background: rgb(253, 214, 186);
+  color: white;
+}
 
 .footer__container {
   background-color: #2C343E;

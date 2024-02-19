@@ -23,9 +23,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
             item.addEventListener('click', (e) => {
                 radioBtn()
                 e.currentTarget.classList.add('choosing__left-item--active')
-             
-                console.log(e.target.tagName);
-                console.log(e.currentTarget);
             })
         })
     }
