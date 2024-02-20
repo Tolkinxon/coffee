@@ -5,6 +5,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const choosing__menu = document.querySelectorAll('.choosing__left-item')
     const choosing__icon = document.querySelectorAll('.choosing__icon')
     const choosing__icon_mover = document.querySelectorAll('.choosing__icon-mover')
+   
     
     
     const radioBtn = () => {
@@ -33,7 +34,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     if (choosing__icon && choosing__icon_mover) {
         for(let i = 0; i < choosing__icon.length; i++){
             choosing__icon[i].addEventListener('click', (e) => {
-                
+
+                              
                 choosing__icon[i].style.transform = 'rotate(180deg)'
                 let j = choosing__icon_mover[i].clientHeight
                 let n
@@ -56,11 +58,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
                         clearInterval(inter)
                     }
 
-                },0.1)
+                },0.1)               
+            })
 
-                console.log();
+            choosing__icon_mover[i].addEventListener('click', (e) => {
+                console.log(e.target.value);
             })
         }
+
+
+
     }  
     
     

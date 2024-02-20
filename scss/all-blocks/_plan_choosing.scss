@@ -123,6 +123,34 @@
             
         }
     }
+
+    &__right-item:last-child {
+        div {
+            border: 10px;
+            padding: 27px 64px;
+            border-radius: 10px;
+            background-color:rgba(44, 52, 62, 1);
+            color: white;
+            flex-direction: column;
+            align-items: start;
+            justify-content: left;
+
+            h2 {
+                font-family: 'Barlow', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-family: 'Fraunces', sans-serif;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 40px;  
+            }
+        }
+    }
     
     
     
