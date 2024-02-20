@@ -2074,6 +2074,9 @@ ul {
   font-size: 24px;
   line-height: 40px;
 }
+.choosing__right-item:last-child div p span {
+  color: rgb(14, 135, 132);
+}
 
 .footer__container {
   background-color: #2C343E;

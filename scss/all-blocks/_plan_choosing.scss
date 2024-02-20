@@ -147,7 +147,11 @@
                 font-family: 'Fraunces', sans-serif;
                 font-weight: 900;
                 font-size: 24px;
-                line-height: 40px;  
+                line-height: 40px; 
+                
+                span {
+                    color: rgba(14, 135, 132, 1);
+                }
             }
         }
     }

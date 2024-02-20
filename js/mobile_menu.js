@@ -5,6 +5,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const choosing__menu = document.querySelectorAll('.choosing__left-item')
     const choosing__icon = document.querySelectorAll('.choosing__icon')
     const choosing__icon_mover = document.querySelectorAll('.choosing__icon-mover')
+    const choosingInnerWords = document.querySelectorAll('.choosing__inner-words')
    
     
     
@@ -31,7 +32,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         })
     } 
     
-    if (choosing__icon && choosing__icon_mover) {
+    if (choosing__icon && choosing__icon_mover && choosingInnerWords) {
         for(let i = 0; i < choosing__icon.length; i++){
             choosing__icon[i].addEventListener('click', (e) => {
 
@@ -62,7 +63,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
             })
 
             choosing__icon_mover[i].addEventListener('click', (e) => {
-                console.log(e.target.value);
+                if(e.target.value){
+                    const n = +e.target.value.at(-1)
+                    console.log(typeof n);
+                    
+                    choosingInnerWords[n].innerHTML = e.target.value
+                }
+                
             })
         }
 
