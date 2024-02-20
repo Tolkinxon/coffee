@@ -33,29 +33,35 @@ window.addEventListener("DOMContentLoaded", (event) => {
     if (choosing__icon && choosing__icon_mover) {
         for(let i = 0; i < choosing__icon.length; i++){
             choosing__icon[i].addEventListener('click', (e) => {
-                console.log(e);
-                let j = 250
+                
+                choosing__icon[i].style.transform = 'rotate(180deg)'
+                let j = choosing__icon_mover[i].clientHeight
+                let n
+                if(j == 0){
+                    n = 5
+                    choosing__icon[i].style.transform = 'rotate(0deg)'
+
+                }
+                else {
+                    n = -5
+                }
                 
                 const inter = setInterval(() => {
-                    j = j - 5
+                    j = j + n
                     choosing__icon_mover[i].style.height = `${j}px`
                     if(j === 0) {
-                        
                         clearInterval(inter)
                     }
+                    if(j === 250) {
+                        clearInterval(inter)
+                    }
+
                 },0.1)
+
+                console.log();
             })
         }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    }  
     
     
     
