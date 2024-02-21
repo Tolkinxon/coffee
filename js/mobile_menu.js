@@ -8,20 +8,22 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const choosingInnerWords = document.querySelectorAll('.choosing__inner-words')
    
     
-    
+    // clearing function about older classes
     const radioBtn = () => {
         if (choosing__menu) {
             choosing__menu.forEach(item => item.classList.remove('choosing__left-item--active'))       
         }
     }
-    
+  
+    // menu side when width turn into mobile shape
     if (burgerBtn) {
         burgerBtn.addEventListener('click', () => {
             menuContainer.classList.toggle('burger--click')
         })
     }
     
-    radioBtn()
+
+    // this codes for active side of choosing orders
     
     if (choosing__menu) {
         choosing__menu.forEach(item => {
@@ -32,6 +34,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         })
     } 
     
+    // this codes about hide and show input elements and making orders
     if (choosing__icon && choosing__icon_mover && choosingInnerWords) {
         for(let i = 0; i < choosing__icon.length; i++){
             choosing__icon[i].addEventListener('click', (e) => {
@@ -62,9 +65,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
                 },0.1)               
             })
 
-            choosingInnerWords[i].innerHTML = choosing__icon_mover[i].childNodes[1].value.slice(0, -1)
 
 
+            choosingInnerWords[i].innerHTML = choosing__icon_mover[i].childNodes[1].value.slice(0, -1) // showing default input values
+
+
+            // showing input values by clicking 
             choosing__icon_mover[i].addEventListener('click', (e) => {
                 if(e.target.value){
                     const n = +e.target.value.at(-1)

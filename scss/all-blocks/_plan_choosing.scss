@@ -14,6 +14,8 @@
         display: flex;
         flex-direction: column;
         margin-right: 125px;
+        position: sticky;
+        top: 70px;
     } 
     
     &__left-item, &__left-item:not(:last-child) {
@@ -26,18 +28,22 @@
         padding-top: 24px;
         border-bottom: 1px solid rgba(131, 136, 143, 1);
     }
-    
-    &__left-item span span {
+
+    &__left-item a {
+        color: rgba(51, 61, 75, 0.3);
+    }
+
+    &__left-item a span {
         margin-right: 25px;
     }
     
     
-    &__left-item span:hover {
+    &__left-item a:hover {
         color: rgba(51, 61, 75, 0.6); 
         cursor: pointer;  
     }
     
-    &__left-item--active span, &__left-item--active span:hover{
+    &__left-item--active a, &__left-item--active a:hover{
         color: rgba(51, 61, 75, 1); 
     }
     
