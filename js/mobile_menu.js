@@ -62,12 +62,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
                 },0.1)               
             })
 
+            choosingInnerWords[i].innerHTML = choosing__icon_mover[i].childNodes[1].value.slice(0, -1)
+
+
             choosing__icon_mover[i].addEventListener('click', (e) => {
                 if(e.target.value){
                     const n = +e.target.value.at(-1)
                     console.log(typeof n);
                     
-                    choosingInnerWords[n].innerHTML = e.target.value
+                    choosingInnerWords[n - 1].innerHTML = e.target.value.slice(0, -1)
                 }
                 
             })
