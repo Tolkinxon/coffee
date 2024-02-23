@@ -1,34 +1,81 @@
 .plan-how-it-works {
     div {
-        max-width: 1280px;
-        width: 100%;
-        background-color: rgba(51, 61, 75, 1);
-        border-radius: 10px;
-        padding-top: 115px;
-        padding-left: 85px;
-        ul {
-            li {
-                padding-top: 82px;
-
-                .item__round {
-                    width: 30px;
-                    padding: 0px;
-                    border-radius: 50%;
-                }
-                
-                .item__number {
-                    padding: 0;
-                }
-                
-                .item__heading, .item__paragraph {
-                    color: rgba(254, 252, 247, 1);
+        div {
+            max-width: 1280px;
+            width: 100%;
+            background-color: rgba(51, 61, 75, 1);
+            border-radius: 10px;
+            padding-top: 115px;
+            padding-left: 85px;
+            ul {
+                li {
+                    padding-top: 82px;
                     
-                }
-                
-                .item__paragraph {
-                    margin-bottom: 40px;                    
+                    .item__round {
+                        width: 30px;
+                        padding: 0px;
+                        border-radius: 50%;
+                    }
+                    
+                    .item__number {
+                        padding: 0;
+                    }
+                    
+                    .item__heading, .item__paragraph {
+                        color: rgba(254, 252, 247, 1);
+                        
+                    }
+                    
+                    .item__paragraph {
+                        margin-bottom: 40px;                    
+                    }
                 }
             }
-        }
-    }    
+        }  
+    }  
+}
+
+@media  only screen and (max-width: 1000px) {
+    .plan-how-it-works {
+        div {
+            padding: 0;
+            .how-it-works__container {
+                max-width: 1000px;
+                width: 100%;
+                padding: 0;
+                padding-top: 97px;
+                padding-left: 40px;
+                padding-right: 40px;
+                ul {
+                    width: 100%;
+                    li {
+                        max-width: 500px;
+                        width: 100%;
+                        padding: 0;
+                        padding-top: 82px;
+                        padding-right: 10px;
+                        
+                        .item__round {
+                            width: 30px;
+                            padding: 0px;
+                            border-radius: 50%;
+                        }
+                        
+                        .item__number {
+                            padding: 0;
+                        }
+                        
+                        .item__heading, .item__paragraph {
+                            color: rgba(254, 252, 247, 1);
+                            
+                        }
+                        
+                        .item__paragraph {
+                            margin-bottom: 40px;                    
+                        }
+                    }
+                }
+            }  
+        }  
+    }   
 }

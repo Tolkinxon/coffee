@@ -1951,7 +1951,7 @@ ul {
     text-align: center;
   }
 }
-.plan-how-it-works div {
+.plan-how-it-works div div {
   max-width: 1280px;
   width: 100%;
   background-color: rgb(51, 61, 75);
@@ -1959,24 +1959,61 @@ ul {
   padding-top: 115px;
   padding-left: 85px;
 }
-.plan-how-it-works div ul li {
+.plan-how-it-works div div ul li {
   padding-top: 82px;
 }
-.plan-how-it-works div ul li .item__round {
+.plan-how-it-works div div ul li .item__round {
   width: 30px;
   padding: 0px;
   border-radius: 50%;
 }
-.plan-how-it-works div ul li .item__number {
+.plan-how-it-works div div ul li .item__number {
   padding: 0;
 }
-.plan-how-it-works div ul li .item__heading, .plan-how-it-works div ul li .item__paragraph {
+.plan-how-it-works div div ul li .item__heading, .plan-how-it-works div div ul li .item__paragraph {
   color: rgb(254, 252, 247);
 }
-.plan-how-it-works div ul li .item__paragraph {
+.plan-how-it-works div div ul li .item__paragraph {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .plan-how-it-works div {
+    padding: 0;
+  }
+  .plan-how-it-works div .how-it-works__container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0;
+    padding-top: 97px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .plan-how-it-works div .how-it-works__container ul {
+    width: 100%;
+  }
+  .plan-how-it-works div .how-it-works__container ul li {
+    max-width: 500px;
+    width: 100%;
+    padding: 0;
+    padding-top: 82px;
+    padding-right: 10px;
+  }
+  .plan-how-it-works div .how-it-works__container ul li .item__round {
+    width: 30px;
+    padding: 0px;
+    border-radius: 50%;
+  }
+  .plan-how-it-works div .how-it-works__container ul li .item__number {
+    padding: 0;
+  }
+  .plan-how-it-works div .how-it-works__container ul li .item__heading, .plan-how-it-works div .how-it-works__container ul li .item__paragraph {
+    color: rgb(254, 252, 247);
+  }
+  .plan-how-it-works div .how-it-works__container ul li .item__paragraph {
+    margin-bottom: 40px;
+  }
+}
 .choosing__container {
   display: flex;
   justify-content: left;
