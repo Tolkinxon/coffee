@@ -47,7 +47,8 @@
   border: 1px solid #0E8784;
   border-radius: 50%;
   position: absolute;
-  top: -18px;
+  top: 0;
+  transform: translateY(-50%);
   background-color: white;
 }
 

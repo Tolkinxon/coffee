@@ -1153,7 +1153,8 @@ a {
   border: 1px solid #0E8784;
   border-radius: 50%;
   position: absolute;
-  top: -18px;
+  top: 0;
+  transform: translateY(-50%);
   background-color: white;
 }
 
@@ -1951,11 +1952,29 @@ ul {
   }
 }
 .plan-how-it-works div {
+  max-width: 1280px;
+  width: 100%;
   background-color: rgb(51, 61, 75);
   border-radius: 10px;
+  padding-top: 115px;
+  padding-left: 85px;
+}
+.plan-how-it-works div ul li {
+  padding-top: 82px;
+}
+.plan-how-it-works div ul li .item__round {
+  width: 30px;
+  padding: 0px;
+  border-radius: 50%;
+}
+.plan-how-it-works div ul li .item__number {
+  padding: 0;
 }
 .plan-how-it-works div ul li .item__heading, .plan-how-it-works div ul li .item__paragraph {
   color: rgb(254, 252, 247);
+}
+.plan-how-it-works div ul li .item__paragraph {
+  margin-bottom: 40px;
 }
 
 .choosing__container {

@@ -1,15 +1,34 @@
 .plan-how-it-works {
     div {
+        max-width: 1280px;
+        width: 100%;
         background-color: rgba(51, 61, 75, 1);
         border-radius: 10px;
+        padding-top: 115px;
+        padding-left: 85px;
         ul {
             li {
-                .item__heading, .item__paragraph  {
+                padding-top: 82px;
+
+                .item__round {
+                    width: 30px;
+                    padding: 0px;
+                    border-radius: 50%;
+                }
+                
+                .item__number {
+                    padding: 0;
+                }
+                
+                .item__heading, .item__paragraph {
                     color: rgba(254, 252, 247, 1);
+                    
+                }
+                
+                .item__paragraph {
+                    margin-bottom: 40px;                    
                 }
             }
         }
-    }
-
-
+    }    
 }
