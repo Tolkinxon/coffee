@@ -33,6 +33,7 @@
   padding-right: 95px;
   border-top: 1px solid #FDD6BA;
   position: relative;
+  padding-top: 82px;
 }
 
 .how-it-works__item:nth-child(3) {
@@ -47,7 +48,6 @@
   border-radius: 50%;
   position: absolute;
   top: -18px;
-  margin-bottom: 37px;
   background-color: white;
 }
 
@@ -58,9 +58,8 @@
   font-style: normal;
   font-weight: 900;
   line-height: 72px; /* 100% */
-  margin-bottom: 38px;
-  margin-top: 82px;
-  
+  margin: 0;
+  margin-bottom: 38px;  
 }
 
 .item__heading {
