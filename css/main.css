@@ -1209,10 +1209,10 @@ a {
     max-width: 223px;
     width: 100%;
     padding-right: 20px;
+    padding-top: 62px;
   }
   .item__number {
     margin-bottom: 42px;
-    margin-top: 48px;
   }
   .item__heading {
     max-width: 223px;
@@ -1950,8 +1950,12 @@ ul {
     text-align: center;
   }
 }
-.plan-how-it-works {
-  margin-bottom: 168px;
+.plan-how-it-works div {
+  background-color: rgb(51, 61, 75);
+  border-radius: 10px;
+}
+.plan-how-it-works div ul li .item__heading, .plan-how-it-works div ul li .item__paragraph {
+  color: rgb(254, 252, 247);
 }
 
 .choosing__container {

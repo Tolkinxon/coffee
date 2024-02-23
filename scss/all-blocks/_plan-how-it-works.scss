@@ -1,3 +1,15 @@
 .plan-how-it-works {
-    margin-bottom: 168px;
+    div {
+        background-color: rgba(51, 61, 75, 1);
+        border-radius: 10px;
+        ul {
+            li {
+                .item__heading, .item__paragraph  {
+                    color: rgba(254, 252, 247, 1);
+                }
+            }
+        }
+    }
+
+
 }
