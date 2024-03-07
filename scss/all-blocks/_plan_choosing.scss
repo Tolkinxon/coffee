@@ -1,7 +1,7 @@
 .choosing {
     &__container {
         display: flex;
-        justify-content: left;
+        justify-content: space-between;
         align-items: start;
         padding-right: 95px;
         padding-left: 95px;
@@ -13,7 +13,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-right: 125px;
+        margin-right: 25px;
         position: sticky;
         top: 70px;
     } 
@@ -161,10 +161,22 @@
             }
         }
     }
+    @media only screen  and (max-width: 1200px) {
+        &__container {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
 
     @media only screen  and (max-width: 1144px) {
+
         &__left-list{
             display: none;
+        }
+
+        &__right-list {
+            margin-right: auto;
+            margin-left: auto;
         }
         
     }
