@@ -161,6 +161,13 @@
             }
         }
     }
+
+    @media only screen  and (max-width: 1144px) {
+        &__left-list{
+            display: none;
+        }
+        
+    }
     
     
     

@@ -372,6 +372,7 @@ a {
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
+  border: 2px solid red;
 }
 
 .visually-hidden {
@@ -2142,6 +2143,11 @@ ul {
 }
 .choosing__right-item:last-child div p span {
   color: rgb(14, 135, 132);
+}
+@media only screen and (max-width: 1144px) {
+  .choosing__left-list {
+    display: none;
+  }
 }
 
 .footer__container {
