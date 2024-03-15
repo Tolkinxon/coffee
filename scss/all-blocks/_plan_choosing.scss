@@ -151,7 +151,6 @@
                 font-size: 16px;
                 line-height: 26px;
                 margin-bottom: 8px;
-                border: 2px solid red;
             }
 
             p {
@@ -228,9 +227,7 @@
     
 }
 
-@media only screen  and (max-width: 710px) {
-   
-    
+@media only screen  and (max-width: 710px) {  
     
     &__right-item {
     > div {
@@ -266,6 +263,49 @@
 
 
 }
+
+@media only screen  and (max-width: 375px) {  
+    
+    &__right-item {
+        margin-bottom: 70px;
+    > div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        label {
+            max-width: 100%;    
+            width: 100%;
+            padding: 25px;
+            margin-bottom: 16px;
+            height: 140px;
+        }
+    }
+
+   
+        > div:nth-child(1) {
+            margin-bottom: 18px;
+            flex-direction: row;
+            h2 {
+                max-width: 240px;
+                width: 100%;
+            }
+            
+            img {
+                display: inline-block;
+                width: 18px;
+                height: 12px;
+            }
+        }
+    }
+
+    &__right-item:nth-last-child(2) {
+        margin-bottom: 120px;
+        border: 2px solid blue;
+    }
+
+
+}
+
 
 
 
