@@ -230,36 +230,38 @@
 
 @media only screen  and (max-width: 710px) {
    
+    
+    
     &__right-item {
-        > div:nth-child(1) {
-            margin-bottom: 32px; 
-            h2 {
-                display: inline;
-                font-size: 24px;
-                line-height: 28px;
-            }
-            
-            img {
-                display: inline;
-                width: 18px;
-                height: 12px;
-            }
-        }
-
-
-
-       > div {
+    > div {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         label {
             max-width: 90%;
             width: 100%;
-            padding: 32px 26px;
+            padding: 25px;
             margin-bottom: 16px;
             height: 140px;
         }
-       }
+    }
+
+   
+        > div:nth-child(1) {
+            margin-bottom: 32px;
+            flex-direction: row;
+            h2 {
+                display: inline-block;
+                font-size: 24px;
+                line-height: 28px;
+            }
+            
+            img {
+                display: inline-block;
+                width: 18px;
+                height: 12px;
+            }
+        }
     }
 
 
