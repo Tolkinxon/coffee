@@ -2174,15 +2174,6 @@ ul {
   .choosing__right-item > div label h3 {
     margin-bottom: 8px;
   }
-  .choosing__right-item:last-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .choosing .choosing-link {
-    align-self: flex-end;
-  }
 }
 @media only screen and (max-width: 710px) {
   .choosing__right-item > div {
@@ -2210,6 +2201,18 @@ ul {
     display: inline-block;
     width: 18px;
     height: 12px;
+  }
+  .choosing__right-item:last-child {
+    padding: 27px 44px;
+  }
+  .choosing__right-item:last-child div {
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+  }
+  .choosing__right-item:last-child .choosing-link {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media only screen and (max-width: 375px) {
