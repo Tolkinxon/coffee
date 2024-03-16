@@ -58,6 +58,11 @@
     overflow: hidden;
   }
 
+  .remove-scrolling { 
+    height: 100%; 
+    overflow: hidden; 
+  } 
+
   @media only screen and (max-width: 768px) {
     .container {
       max-width: 708px;

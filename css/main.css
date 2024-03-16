@@ -388,6 +388,11 @@ a {
   overflow: hidden;
 }
 
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 708px;
@@ -2264,10 +2269,10 @@ ul {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.541);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 0;
+  left: 0;
   z-index: 999;
+  display: none;
 }
 .modal__window {
   max-width: 540px;
@@ -2275,6 +2280,11 @@ ul {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: calc(100vh - 50%);
+  transform: translateY(-50%);
 }
 .modal__window h1 {
   padding: 48px 40px 40px 56px;
