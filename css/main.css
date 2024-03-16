@@ -2032,7 +2032,7 @@ ul {
   flex-direction: column;
   margin-right: 25px;
   position: sticky;
-  top: 70px;
+  top: 30px;
 }
 .choosing__left-item, .choosing__left-item:not(:last-child) {
   font-family: "Fraunces", sans-serif;
@@ -2124,7 +2124,9 @@ ul {
   color: white;
 }
 .choosing__right-item:last-child {
-  text-align: right;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 .choosing__right-item:last-child div {
   border: 10px;
@@ -2151,6 +2153,9 @@ ul {
 }
 .choosing__right-item:last-child div p span {
   color: rgb(14, 135, 132);
+}
+.choosing__right-item:last-child .choosing-link {
+  margin-left: auto;
 }
 @media only screen and (max-width: 1200px) {
   .choosing__container {
@@ -2309,6 +2314,9 @@ ul {
   text-align: left;
   color: rgb(131, 136, 143);
   margin-bottom: 7px;
+}
+.modal__window div .modal__text-one span {
+  color: rgb(14, 135, 132);
 }
 .modal__window div .modal__text-two {
   font-family: "Barlow", sans-serif;

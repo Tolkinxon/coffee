@@ -15,7 +15,7 @@
         flex-direction: column;
         margin-right: 25px;
         position: sticky;
-        top: 70px;
+        top: 30px;
     } 
     
     &__left-item, &__left-item:not(:last-child) {
@@ -135,7 +135,9 @@
     }
 
     &__right-item:last-child {
-        text-align: right;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
         div {
             border: 10px;
             padding: 27px 64px;
@@ -164,6 +166,10 @@
                     color: rgba(14, 135, 132, 1);
                 }
             }
+        }
+
+        .choosing-link {
+            margin-left: auto;
         }
     }
 
