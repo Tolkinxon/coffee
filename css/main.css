@@ -523,7 +523,6 @@ a {
     width: 100vw;
     height: calc(100vh - 88px);
     z-index: 0;
-    background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.0948551296) 5%, rgb(255, 255, 255) 45%);
   }
   .header__burger {
