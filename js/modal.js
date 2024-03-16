@@ -20,5 +20,12 @@ modalButton.addEventListener('click', () => {
     document.body.classList.remove('remove-scrolling')
 })
 
+window.addEventListener('keydown', (e) => {
+    if(e.code == 'Escape') {
+        modal.style.display = 'none'  
+        document.body.classList.remove('remove-scrolling')
+    }
+})
+
 
 

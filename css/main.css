@@ -408,9 +408,9 @@ a {
 .header__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 44px;
-  margin-bottom: 44px;
+  align-items: stretch;
+  padding-top: 44px;
+  padding-bottom: 44px;
   position: relative;
 }
 
@@ -477,8 +477,8 @@ a {
     height: 90px;
   }
   .header__container {
-    margin-top: 32px;
-    margin-bottom: 40px;
+    padding-top: 32px;
+    padding-bottom: 40px;
   }
   .header__container img {
     width: 163px;
@@ -487,14 +487,16 @@ a {
   }
   .header__list {
     display: none;
-    height: 0px;
+    max-width: 100%;
     width: 100%;
+    height: 100vh;
     position: absolute;
     text-align: center;
     background-color: white;
-    top: 200px;
     flex-direction: column;
     justify-content: start;
+    padding-top: 40px;
+    top: 100%;
     left: 0;
   }
   .header__list .header__item {
@@ -2154,9 +2156,6 @@ ul {
 .choosing__right-item:last-child div p span {
   color: rgb(14, 135, 132);
 }
-.choosing__right-item:last-child .choosing-link {
-  margin-left: auto;
-}
 @media only screen and (max-width: 1200px) {
   .choosing__container {
     padding-right: 50px;
@@ -2170,6 +2169,10 @@ ul {
   .choosing__right-list {
     margin-right: auto;
     margin-left: auto;
+  }
+  .choosing__right-item:last-child {
+    align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 830px) {
@@ -2403,7 +2406,8 @@ ul {
   display: flex;
 }
 
-.footer__item {
+.footer__item a {
+  text-decoration: none;
   margin-right: 33px;
   color: #83888F;
   font-family: "Barlow", sans-serif;
@@ -2415,7 +2419,7 @@ ul {
   text-transform: uppercase;
 }
 
-.footer__item:hover {
+.footer__item a:hover {
   color: #FEFCF7;
   cursor: pointer;
 }

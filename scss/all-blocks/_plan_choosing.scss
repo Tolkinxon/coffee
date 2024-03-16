@@ -167,10 +167,6 @@
                 }
             }
         }
-
-        .choosing-link {
-            margin-left: auto;
-        }
     }
 
 @media only screen  and (max-width: 1200px) {
@@ -189,6 +185,11 @@
         &__right-list {
             margin-right: auto;
             margin-left: auto;
+        }
+
+        &__right-item:last-child {
+            align-items: center;
+            justify-content: center;
         }
         
     }

@@ -25,21 +25,25 @@
   }
   
   .footer__item {
-    margin-right: 33px;
-    color: #83888F;
-  
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 15px; /* 125% */
-    letter-spacing: 0.923px;
-    text-transform: uppercase;
+    a {
+      text-decoration: none;
+      margin-right: 33px;
+      color: #83888F;
+      font-family: 'Barlow', sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 15px; /* 125% */
+      letter-spacing: 0.923px;
+      text-transform: uppercase;
+    }
   }
   
-  .footer__item:hover {
+  .footer__item { 
+    a:hover {
     color: #FEFCF7;
     cursor: pointer;
+    }
   }
   
   .footer__right-side {
