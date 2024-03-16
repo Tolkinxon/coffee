@@ -8,7 +8,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
         burgerBtn.addEventListener('click', () => {
             menuContainer.classList.toggle('burger--click')
         })
-    }    
+    } 
+    
+
 });
 
 
